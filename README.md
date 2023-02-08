@@ -5,90 +5,39 @@ Smiths Industries Flight Director Horizon H6
 
 [More info from Amateurtele.com](http://amateurtelecom.reiding.com/index.php?artikel=340)
 
-## DH1 Large 41 way connector 
+## Devices
 
 
-### pin summary
-
-|Pin Nos|Function|Resistance|
-|-------|--------|----------|
-|W-A| power supply, 115VAC 400Hz|
-|L-M-e|synchro ROLL| 3x 205R |
-|J-H-c|synchro PITCH| 3x 199R |
-|D-Y-Z|synchro DYZ|3x 19R a|
-|B-C|Ref BC|53R|
-|E-F|Ref EF|53R c|
-|X-k|Lamps|3R|
-|t-m-a|synchro tma|3x 19R b|
-|P-R|Ref PR|50R|
-|S-T|?|14k,14k,to U|
-|U-N|?|res to chassis(varies)|
-|W-f-r-s-j||Common|
-|g-h|X flag|715R|
-
- * Lamps 5V
- * Flags 12 to 26V DC
- * Main power 115 V 400 Hz
- * Synchro resolver inputs 11V 400 Hz ?
+|Index|Chanell   |Purpose|
+|-----|----------|-------|
+|A    |Roll      |Motor  |
+|B    |Pitch     |Motor  |
+|C    |Roll      |Syn Rx |
+|D    |Roll      |Syn Tx |
+|E    |Pitch     |Syn Tx |
+|F    |Pitch     |Syn Rx |
+|G    |Horizontal|Syn Tx |
+|H    |Roll      |Syn Tx |
+|I    |Pitch     |Syn Tx |
+|J    |Vertical  |Syn Tx |
+|K    |Horizontal|Motor  |
+|L    |Vertical  |Motor  | 
 
 <br>
+### device map
 
-### pin map 
-
-![41 way connector](./images/2255095-500.webp)
-
-<br>
-
-|Pin No|     |Function|
-|-----|-----|-----|
-|   A |49R    |115 VAC  |
-|   B |53R    |Ref BC   |
-|   C |53R    |Ref BC   |
-|   D |19Ra   |Syn DYZ  |
-|   E |53Rc   |Ref EF   |
-|   F |53Rc   |Ref EF   |
-|   G |n/c    |n/a      |
-|   H |199R   |Syn PITCH|
-|   J |199R   |Syn PITCH|
-|   K |n/c    |n/a      |
-|   L |205R   |Syn ROLL |
-|   M |205R   |Syn ROLL |
-|   N |Chassis|Chassis  |
-|   P |50R    |Ref PR   |
-|   R |50R    |Ref PR   |
-|   S |14k -U |?        |
-|   T |14k -U |?        |
-|   U |U-N res|?        |
-|   V |n/c    |n/a      |
-|   W |Wfrsj  |Common   |
-|   X |3R     |Lamp-b   |
-|   Y |19Ra   |Syn DYZ  |
-|   Z |19Ra   |Syn DYZ  |
-|   a |19Rb   |Syn tma  |
-|   b |n/c    |n/a      |
-|   c |199R   |PITCH    |
-|   d |n/c    |n/a      |
-|   e |205R   |ROLL     |
-|   f |Wfrsj  |Common   |
-|   g |715R Black|X flag|
-|   h |715R Red  |X flag|
-|   i |n/c    |n/a      |
-|   j |Wfrsj  |Common   |
-|   k |3R     |Lamp-a   |
-|   m |19Rb   |Syn tma  |
-|   n |n/c    |n/a      |
-|   p |n/c    |n/a      |
-|   q |n/c    |n/a      |
-|   r |Wfrsj  |Common   |
-|   s |Wfrsj  |Common   |
-|   t |19Rb   |Syn tma  |
+|     |     |     |     |
+|-----|-----|-----|-----|
+|  .  |  L  |  K  |  .  |
+|  J  |  I  |  H  |  G  |
+|  F  |  E  |  D  |  C  |
+|  X  |  B  |  A  |  O  |
 
 
 ## DH2 Small 19 way connector
 
 ### pin summary
 
-<br>
 
 |Pin Nos ||Function|
 |--------|--------|----------|
@@ -129,4 +78,86 @@ Smiths Industries Flight Director Horizon H6
 |   T |150R    |Ref I     |
 |   U |150R    |Ref I     |
 |   V |V-S-F   |Common    |
+
+<br>
+
+## DH1 Large 41 way connector 
+
+
+### pin summary
+
+|Pin Nos|Function|Resistance|
+|-------|--------|----------|
+|W-A| power supply, 115VAC 400Hz|
+|L-M-e|synchro ROLL| 3x 205R |
+|J-H-c|synchro PITCH| 3x 199R |
+|D-Y-Z|synchro DYZ|3x 19R a|
+|B-C|Ref BC|53R|
+|E-F|Ref EF|53R c|
+|X-k|Lamps|3R|
+|t-m-a|synchro tma|3x 19R b|
+|P-R|Line Ref PR|50R|
+|S-U|Line Vertical|14k|
+|T-U|Line Horizontal|14k|
+|U-N|?|res to chassis(varies)|
+|W-f-r-s-j||Common|
+|g-h|X flag|715R|
+
+ * Lamps 5V
+ * Flags 12 to 26V DC
+ * Main power 115 V 400 Hz
+ * Synchro resolver inputs 11V 400 Hz ?
+
+<br>
+
+### pin map 
+
+![41 way connector](./images/2255095-500.webp)
+
+<br>
+
+|Pin No|     |Function|
+|-----|-----|-----|
+|   A |49R    |115 VAC    |
+|   B |53R    |Roll Ref   |
+|   C |53R    |Roll Ref   |
+|   D |19Ra   |Roll Out   |
+|   E |53Rc   |Pitch Ref  |
+|   F |53Rc   |Pitch Ref  |
+|   G |n/c    |n/a        |
+|   H |199R   |Syn PITCH  |
+|   J |199R   |Syn PITCH  |
+|   K |n/c    |n/a        |
+|   L |205R   |Syn ROLL   |
+|   M |205R   |Syn ROLL   |
+|   N |Chassis|Chassis    |
+|   P |50R    |Line Ref in|
+|   R |50R    |Line Ref in|
+|   S |14k -U |Vertical   |
+|   T |14k -U |Horizontal |
+|   U |U-N res|H/V low ?  |
+|   V |n/c    |n/a        |
+|   W |Wfrsj  |Common     |
+|   X |3R     |Lamp-b     |
+|   Y |19Ra   |Roll Out   |
+|   Z |19Ra   |Roll Out   |
+|   a |19Rb   |Pitch Out  |
+|   b |n/c    |n/a        |
+|   c |199R   |PITCH      |
+|   d |n/c    |n/a        |
+|   e |205R   |ROLL       |
+|   f |Wfrsj  |Common     |
+|   g |715R Black|X flag  |
+|   h |715R Red  |X flag  |
+|   i |n/c    |n/a        |
+|   j |Wfrsj  |Common     |
+|   k |3R     |Lamp-a     |
+|   m |19Rb   |Pitch Out  |
+|   n |n/c    |n/a        |
+|   p |n/c    |n/a        |
+|   q |n/c    |n/a        |
+|   r |Wfrsj  |Common     |
+|   s |Wfrsj  |Common     |
+|   t |19Rb   |Pitch Out  |
+
 
