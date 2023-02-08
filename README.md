@@ -7,24 +7,8 @@ Smiths Industries Flight Director Horizon H6
 
 ## Devices
 
-
-|Index|Chanell   |Purpose|
-|-----|----------|-------|
-|A    |Roll      |Motor  |
-|B    |Pitch     |Motor  |
-|C    |Roll      |Syn Rx |
-|D    |Roll      |Syn Tx |
-|E    |Pitch     |Syn Tx |
-|F    |Pitch     |Syn Rx |
-|G    |Horizontal|Syn Tx |
-|H    |Roll      |Syn Tx |
-|I    |Pitch     |Syn Tx |
-|J    |Vertical  |Syn Tx |
-|K    |Horizontal|Motor  |
-|L    |Vertical  |Motor  | 
-
-<br>
 ### device map
+  * Layout of devices on the servo chassis, motor side, top up.
 
 |     |     |     |     |
 |-----|-----|-----|-----|
@@ -32,6 +16,23 @@ Smiths Industries Flight Director Horizon H6
 |  J  |  I  |  H  |  G  |
 |  F  |  E  |  D  |  C  |
 |  X  |  B  |  A  |  O  |
+
+|Index|Chanell   |Purpose |
+|-----|----------|--------|
+|A    |Roll      |Motor   |
+|B    |Pitch     |Motor   |
+|C    |Roll      |Syn Rx  |
+|D    |Roll      |Syn Tx  |
+|E    |Pitch     |Syn Tx  |
+|F    |Pitch     |Syn Rx  |
+|G    |Horizontal|Syn Tx  |
+|H    |Roll      |Syn Tx  |
+|I    |Pitch     |Syn Tx  |
+|J    |Vertical  |Syn Tx  |
+|K    |Horizontal|Motor   |
+|L    |Vertical  |Motor   |
+|X    |X Flag    |Solenoid|
+|O    |O Flag    |Solenoid|
 
 
 ## DH2 Small 19 way connector
