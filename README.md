@@ -7,8 +7,7 @@ Smiths Industries Flight Director Horizon H6
 
 ## Devices
 
-### device map
-  * Layout of devices on the servo chassis, motor side, top up.
+### Layout of devices on the servo chassis, motor side, top up.
 
 |     |     |     |     |
 |-----|-----|-----|-----|
@@ -89,7 +88,7 @@ Smiths Industries Flight Director Horizon H6
 
 |Pin Nos|Function|Resistance|
 |-------|--------|----------|
-|W-A| power supply, 115VAC 400Hz|
+|W-A|Pitch and Roll power supply, 115V 400Hz|50R|
 |L-M-e|synchro ROLL| 3x 205R |
 |J-H-c|synchro PITCH| 3x 199R |
 |D-Y-Z|synchro DYZ|3x 19R a|
@@ -97,7 +96,7 @@ Smiths Industries Flight Director Horizon H6
 |E-F|Ref EF|53R c|
 |X-k|Lamps|3R|
 |t-m-a|synchro tma|3x 19R b|
-|P-R|Line Ref PR|50R|
+|P-R|Horizontal and Vertical power supply, 115V 400Hz|50R|
 |S-U|Line Vertical|14k|
 |T-U|Line Horizontal|14k|
 |U-N|?|res to chassis(varies)|
@@ -117,48 +116,52 @@ Smiths Industries Flight Director Horizon H6
 
 <br>
 
-|Pin No|     |Function|
-|-----|-----|-----|
-|   A |49R    |115 VAC    |
-|   B |53R    |Roll Ref   |
-|   C |53R    |Roll Ref   |
-|   D |19Ra   |Roll Out   |
-|   E |53Rc   |Pitch Ref  |
-|   F |53Rc   |Pitch Ref  |
-|   G |n/c    |n/a        |
-|   H |199R   |Syn PITCH  |
-|   J |199R   |Syn PITCH  |
-|   K |n/c    |n/a        |
-|   L |205R   |Syn ROLL   |
-|   M |205R   |Syn ROLL   |
-|   N |Chassis|Chassis    |
-|   P |50R    |Line Ref in|
-|   R |50R    |Line Ref in|
-|   S |14k -U |Vertical   |
-|   T |14k -U |Horizontal |
-|   U |U-N res|H/V low ?  |
-|   V |n/c    |n/a        |
-|   W |Wfrsj  |Common     |
-|   X |3R     |Lamp-b     |
-|   Y |19Ra   |Roll Out   |
-|   Z |19Ra   |Roll Out   |
-|   a |19Rb   |Pitch Out  |
-|   b |n/c    |n/a        |
-|   c |199R   |PITCH      |
-|   d |n/c    |n/a        |
-|   e |205R   |ROLL       |
-|   f |Wfrsj  |Common     |
-|   g |715R Black|X flag  |
-|   h |715R Red  |X flag  |
-|   i |n/c    |n/a        |
-|   j |Wfrsj  |Common     |
-|   k |3R     |Lamp-a     |
-|   m |19Rb   |Pitch Out  |
-|   n |n/c    |n/a        |
-|   p |n/c    |n/a        |
-|   q |n/c    |n/a        |
-|   r |Wfrsj  |Common     |
-|   s |Wfrsj  |Common     |
-|   t |19Rb   |Pitch Out  |
+|Pin No|Colour|     |Function|
+|-----|-------|-----|-----|
+|   A ||49R    |P&R 115 VAC line|
+|   B ||53R    |Roll Ref   |
+|   C ||53R    |Roll Ref   |
+|   D ||19Ra   |Roll Out   |
+|   E ||53Rc   |Pitch Ref  |
+|   F ||53Rc   |Pitch Ref  |
+|   G ||n/c    |n/a        |
+|   H ||199R   |Syn PITCH  |
+|   J ||199R   |Syn PITCH  |
+|   K ||n/c    |n/a        |
+|   L ||205R   |Syn ROLL   |
+|   M ||205R   |Syn ROLL   |
+|   N |bl bk br|Chassis|Chassis    |
+|   P |bl bk pr|50R    |H&V line 115VAC return|
+|   R |bl bk bl|50R    |H&V line 115VAC line|
+|   S |bl bk yl|14k -U |Vertical   |
+|   T |bl bk gn|14k -U |Horizontal |
+|   U |bl bk or|U-N res|H/V low ?  |
+|   V ||n/c    |n/a        |
+|   W ||Wfrsj  |Common, P&R 115VAC return|
+|   X ||3R     |Lamp-b     |
+|   Y ||19Ra   |Roll Out   |
+|   Z ||19Ra   |Roll Out   |
+|   a ||19Rb   |Pitch Out  |
+|   b ||n/c    |n/a        |
+|   c ||199R   |PITCH      |
+|   d ||n/c    |n/a        |
+|   e ||205R   |ROLL       |
+|   f ||Wfrsj  |Common     |
+|   g ||715R Black|X flag  |
+|   h ||715R Red  |X flag  |
+|   i ||n/c    |n/a        |
+|   j ||Wfrsj  |Common     |
+|   k ||3R     |Lamp-a     |
+|   m ||19Rb   |Pitch Out  |
+|   n ||n/c    |n/a        |
+|   p ||n/c    |n/a        |
+|   q ||n/c    |n/a        |
+|   r ||Wfrsj  |Common     |
+|   s ||Wfrsj  |Common     |
+|   t ||19Rb   |Pitch Out  |
 
+[Color Abbreviation Chart](https://technicallibrary.midmark.com/Global/Global-GB-00003.htm)
 
+![Connector inside](./images/Inside-COLLAGE.jpg)
+
+![HV tag strip](./images/HV-tag-strip.jpg)
