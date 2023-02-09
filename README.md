@@ -3,7 +3,11 @@ Smiths Industries Flight Director Horizon H6
 
 ![H6 Collage](./images/H6-COLLAGE.jpg)
 
-[More info from Amateurtele.com](http://amateurtelecom.reiding.com/index.php?artikel=340)
+### demo videos
+
+[Line movement](https://youtu.be/34gBlmWHBOg)
+[Arduino control](https://youtube.com/shorts/K1eCNRkyxHA)
+
 
 ## Devices
 
@@ -161,6 +165,10 @@ Smiths Industries Flight Director Horizon H6
 |   t ||19Rb   |Pitch Out  |
 
 [Color Abbreviation Chart](https://technicallibrary.midmark.com/Global/Global-GB-00003.htm)
+
+[Arduino sketch to control Horizontal and Vertical needles](./pwm_HV_line_transmit/pwm_HV_line_transmit.ino)
+
+[More info from Amateurtele.com](http://amateurtelecom.reiding.com/index.php?artikel=340)
 
 ![Connector inside](./images/Inside-COLLAGE.jpg)
 
