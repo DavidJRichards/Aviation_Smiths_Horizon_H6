@@ -168,6 +168,8 @@ Smiths Industries Flight Director Horizon H6
 
 [Arduino sketch to control Horizontal and Vertical needles](./pwm_HV_line_transmit/pwm_HV_line_transmit.ino)
 
+[Arduino pico 2040 sketch to control Horizontal and Vertical needles](./software/pico_400hz_PWM_H6_DISPLAY/pico_400hz_PWM_H6_DISPLAY.ino)
+
 [More info from Amateurtele.com](http://amateurtelecom.reiding.com/index.php?artikel=340)
 
 ![Connector inside](./images/Inside-COLLAGE.jpg)
